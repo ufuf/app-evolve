@@ -7,5 +7,7 @@
 		<string>applinks:evolve.xamarin.com</string>
 		<string>applinks:www.evolve.xamarin.com</string>
 	</array>
+	<key>aps-environment</key>
+	<string>development</string>
 </dict>
 </plist>

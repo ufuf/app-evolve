@@ -15,8 +15,8 @@ namespace XamarinEvolve.Clients.Portable
 
 
         public const string GoogleSenderId ="xamarinawareness";
-        public const string AzureHubName = "EvolveTest";
-        public const string AzureListenConneciton = "Endpoint=sb://evolvetest.servicebus.windows.net/;SharedAccessKeyName=DefaultListenSharedAccessSignature;SharedAccessKey=nC00PmSAZu5jv1v8qRGBvS6PwpiW9R5V7CrMhf0lWiA=";
+        public const string AzureHubName = "EvolvePush";
+        public const string AzureListenConneciton = "Endpoint=sb://evolvepush.servicebus.windows.net/;SharedAccessKeyName=DefaultListenSharedAccessSignature;SharedAccessKey=lHyA4rB6fJXpPwNyGoIf7yUoWiR3TO79hIzcOYW3HqY=";
     }
     public static class MessageKeys
     {

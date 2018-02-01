@@ -19,6 +19,7 @@ using XamarinEvolve.DataStore.Abstractions;
 using HockeyApp;
 using System.Threading.Tasks;
 using Google.AppIndexing;
+using HockeyApp.iOS;
 
 namespace XamarinEvolve.iOS
 {
@@ -39,7 +40,7 @@ namespace XamarinEvolve.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             
-            var tint = UIColor.FromRGB(118, 53, 235);
+            var tint = UIColor.FromRGB(81, 175, 70);
             UINavigationBar.Appearance.BarTintColor = UIColor.FromRGB(250, 250, 250); //bar background
             UINavigationBar.Appearance.TintColor = tint; //Tint color of button items
 
@@ -56,7 +57,7 @@ namespace XamarinEvolve.iOS
             UIView.AppearanceWhenContainedIn(typeof(SLComposeViewController)).TintColor = tint;
 
             #if !ENABLE_TEST_CLOUD
-            if (!string.IsNullOrWhiteSpace(ApiKeys.HockeyAppiOS) && ApiKeys.HockeyAppiOS != nameof(ApiKeys.HockeyAppiOS)))
+            if (!string.IsNullOrWhiteSpace(ApiKeys.HockeyAppiOS) && ApiKeys.HockeyAppiOS != nameof(ApiKeys.HockeyAppiOS))
             {
                
                 var manager = BITHockeyManager.SharedHockeyManager;
@@ -147,13 +148,11 @@ namespace XamarinEvolve.iOS
 #if ENABLE_TEST_CLOUD
 #else
 
-            if (ApiKeys.AzureServiceBusUrl == nameof(ApiKeys.AzureServiceBusUrl))
-                return;
+            //if (ApiKeys.AzureServiceBusUrl == nameof(ApiKeys.AzureServiceBusUrl))
+                //return;
 
             // Connection string from your azure dashboard
-            var cs = SBConnectionString.CreateListenAccess(
-                new NSUrl(ApiKeys.AzureServiceBusUrl),
-                ApiKeys.AzureKey);
+            var cs = ApiKeys.AzureListenConneciton;
 
             // Register our info with Azure
             var hub = new SBNotificationHub (cs, ApiKeys.AzureHubName);
