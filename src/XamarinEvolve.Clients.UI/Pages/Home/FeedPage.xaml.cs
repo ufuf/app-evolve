@@ -31,39 +31,39 @@ namespace XamarinEvolve.Clients.UI
             }
 
             favoritesTime = Settings.Current.LastFavoriteTime;
-            ViewModel.Tweets.CollectionChanged += (sender, e) => 
+            ViewModel.Tweets.CollectionChanged += (sender, e) =>
                 {
                     var adjust = Device.OS != TargetPlatform.Android ? 1 : -ViewModel.Tweets.Count + 2;
                     ListViewSocial.HeightRequest = (ViewModel.Tweets.Count * ListViewSocial.RowHeight)  - adjust;
                 };
 
-            ViewModel.Sessions.CollectionChanged += (sender, e) => 
+            ViewModel.Sessions.CollectionChanged += (sender, e) =>
                 {
                     var adjust = Device.OS != TargetPlatform.Android ? 1 : -ViewModel.Sessions.Count + 1;
                     ListViewSessions.HeightRequest = (ViewModel.Sessions.Count * ListViewSessions.RowHeight) - adjust;
                 };
 
             ListViewSessions.ItemTapped += (sender, e) => ListViewSessions.SelectedItem = null;
-            ListViewSessions.ItemSelected += async (sender, e) => 
+            ListViewSessions.ItemSelected += async (sender, e) =>
                 {
                     var session = ListViewSessions.SelectedItem as Session;
-                    if(session == null)
+                    if (session == null)
                         return;
                     var sessionDetails = new SessionDetailsPage(session);
 
                     App.Logger.TrackPage(AppPage.Session.ToString(), session.Title);
                     await NavigationService.PushAsync(Navigation, sessionDetails);
                     ListViewSessions.SelectedItem = null;
-                }; 
+                };
 
             NotificationStack.GestureRecognizers.Add(new TapGestureRecognizer
-                {
-                    Command = new Command(async () => 
-                        {
-                            App.Logger.TrackPage(AppPage.Notification.ToString());
-                            await NavigationService.PushAsync(Navigation, new NotificationsPage());
-                        })
-                });
+            {
+                Command = new Command(async () =>
+                    {
+                        App.Logger.TrackPage(AppPage.Notification.ToString());
+                        await NavigationService.PushAsync(Navigation, new NotificationsPage());
+                    })
+            });
         }
 
         protected override void OnAppearing()
