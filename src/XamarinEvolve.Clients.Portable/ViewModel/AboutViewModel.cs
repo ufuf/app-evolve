@@ -16,20 +16,20 @@ namespace XamarinEvolve.Clients.Portable
         public ObservableRangeCollection<MenuItem> InfoItems { get; } = new ObservableRangeCollection<MenuItem>();
         public ObservableRangeCollection<MenuItem> AccountItems { get; } = new ObservableRangeCollection<MenuItem>();
 
-        MenuItem syncItem;
-        MenuItem accountItem;
+        //MenuItem syncItem;
+        //MenuItem accountItem;
         MenuItem pushItem;
         IPushNotifications push;
         public AboutViewModel()
         {
             AboutItems.Clear ();
-            AboutItems.Add(new MenuItem { Name = "About this app", Icon = "icon_venue.png" });
+            //AboutItems.Add(new MenuItem { Name = "About this app", Icon = "icon_venue.png" });
             push = DependencyService.Get<IPushNotifications>();
 
             InfoItems.AddRange(new []
                 {
                     new MenuItem { Name = "Sponsors", Icon = "icon_venue.png", Parameter="sponsors"},
-                    new MenuItem { Name = "Evaluations", Icon = "icon_venue.png", Parameter="evaluations"},
+                    //new MenuItem { Name = "Evaluations", Icon = "icon_venue.png", Parameter="evaluations"},
                     new MenuItem { Name = "Venue", Icon = "icon_venue.png", Parameter = "venue"},
                     new MenuItem { Name = "Conference Floor Maps", Icon = "icon_venue.png", Parameter = "floor-maps"},
                     new MenuItem { Name = "Code of Conduct", Icon = "icon_code_of_conduct.png", Parameter="code-of-conduct" },
@@ -37,15 +37,15 @@ namespace XamarinEvolve.Clients.Portable
 
                 });
 
-            accountItem = new MenuItem
-                {
-                    Name = "Logged in as:"
-                };
+            //accountItem = new MenuItem
+            //    {
+            //        Name = "Logged in as:"
+            //    };
 
-            syncItem = new MenuItem
-                {
-                    Name = "Last Sync:"
-                };
+            //syncItem = new MenuItem
+                //{
+                //    Name = "Last Sync:"
+                //};
 
             pushItem = new MenuItem
             {
@@ -84,8 +84,8 @@ namespace XamarinEvolve.Clients.Portable
 
             UpdateItems();
 
-            AccountItems.Add(accountItem);
-            AccountItems.Add(syncItem);
+            //AccountItems.Add(accountItem);
+            //AccountItems.Add(syncItem);
             AccountItems.Add(pushItem);
 
             //This will be triggered wen 
@@ -101,8 +101,8 @@ namespace XamarinEvolve.Clients.Portable
 
         public void UpdateItems()
         {
-            syncItem.Subtitle = LastSyncDisplay;
-            accountItem.Subtitle = Settings.Current.IsLoggedIn ? Settings.Current.UserDisplayName : "Not signed in";
+            //syncItem.Subtitle = LastSyncDisplay;
+            //accountItem.Subtitle = Settings.Current.IsLoggedIn ? Settings.Current.UserDisplayName : "Not signed in";
            
             pushItem.Name = push.IsRegistered ? "Push notifications enabled" : "Enable push notifications";
         }

@@ -87,8 +87,6 @@
 			<string>quickaction_mini-hacks</string>
 		</dict>
 	</array>
-	<key>CFBundleName</key>
-	<string>Evolve16</string>
 	<key>UILaunchImages</key>
 	<array>
 		<dict>
@@ -171,5 +169,7 @@
 	<array>
 		<string>remote-notification</string>
 	</array>
+	<key>CFBundleName</key>
+	<string>Vizyon 2018</string>
 </dict>
 </plist>

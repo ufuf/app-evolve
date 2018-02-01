@@ -92,23 +92,23 @@ namespace XamarinEvolve.Clients.UI
 
             MessagingService.Current.Subscribe(MessageKeys.NavigateLogin, async m =>
                 {
-                    if(Device.OS == TargetPlatform.Android)
-                    {
-                        ((RootPageAndroid)MainPage).IsPresented = false;
-                    }
+                    //if(Device.OS == TargetPlatform.Android)
+                    //{
+                    //    ((RootPageAndroid)MainPage).IsPresented = false;
+                    //}
 
-                    Page page = null;
-                    if(Settings.Current.FirstRun && Device.OS == TargetPlatform.Android)
-                        page = new LoginPage();
-                    else
-                        page = new EvolveNavigationPage(new LoginPage());
+                    //Page page = null;
+                    //if(Settings.Current.FirstRun && Device.OS == TargetPlatform.Android)
+                    //    page = new LoginPage();
+                    //else
+                    //    page = new EvolveNavigationPage(new LoginPage());
 
                    
-                    var nav = Application.Current?.MainPage?.Navigation;
-                    if(nav == null)
-                        return;
+                    //var nav = Application.Current?.MainPage?.Navigation;
+                    //if(nav == null)
+                    //    return;
                    
-                    await NavigationService.PushModalAsync(nav, page);
+                    //await NavigationService.PushModalAsync(nav, page);
 
                 });
 
