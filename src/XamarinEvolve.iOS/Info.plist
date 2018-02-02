@@ -36,8 +36,6 @@
 	<true/>
 	<key>UILaunchStoryboardName~ipad</key>
 	<string>LaunchScreen~ipad</string>
-	<key>XSAppIconAssets</key>
-	<string>Resources/Images.xcassets/AppIcons.appiconset</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Location is needed to display your current location on maps.</string>
 	<key>NSCalendarsUsageDescription</key>
@@ -131,13 +129,7 @@
 		</dict>
 	</array>
 	<key>CFBundleDisplayName</key>
-	<string>Evolve16</string>
-	<key>CFBundleIconFiles</key>
-	<array>
-		<string>Default.png</string>
-		<string>Default@2x.png</string>
-		<string>Default-568h@2x.png</string>
-	</array>
+	<string>Vizyon 2018</string>
 	<key>CFBundleIdentifier</key>
 	<string>tr.com.mobilist.enterprise.veevent</string>
 	<key>NSAppTransportSecurity</key>
@@ -171,5 +163,9 @@
 	</array>
 	<key>CFBundleName</key>
 	<string>Vizyon 2018</string>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen~ipad</string>
+	<key>XSAppIconAssets</key>
+	<string>Resources/Images.xcassets/AppIcon.appiconset</string>
 </dict>
 </plist>
