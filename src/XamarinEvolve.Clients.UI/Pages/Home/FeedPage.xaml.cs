@@ -34,7 +34,7 @@ namespace XamarinEvolve.Clients.UI
             ViewModel.Tweets.CollectionChanged += (sender, e) =>
                 {
                     var adjust = Device.OS != TargetPlatform.Android ? 1 : -ViewModel.Tweets.Count + 2;
-                    ListViewSocial.HeightRequest = (ViewModel.Tweets.Count * ListViewSocial.RowHeight)  - adjust;
+                    //ListViewSocial".HeightRequest = (ViewModel.Tweets.Count * ListViewSocial.RowHeight)  - adjust;
                 };
 
             ViewModel.Sessions.CollectionChanged += (sender, e) =>

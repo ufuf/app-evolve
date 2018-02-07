@@ -8,7 +8,7 @@
     xmlns:imagecircle="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
     x:Class="XamarinEvolve.Clients.UI.FeedPage"
     x:Name="FeedPage"
-    Title="Evolve Feed"
+    Title="Vizyon 2018"
     Icon="tab_feed.png"
     BackgroundColor="{DynamicResource WindowBackgroundTable}">
     <ContentPage.Resources>
@@ -37,7 +37,7 @@
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="34"/>
                         </Grid.ColumnDefinitions>
-                        <local:LabelSection Text="Announcements"/>
+                        <local:LabelSection Text="Duyurular"/>
                     </Grid>
                     <local:HeaderDivider/>
                     <StackLayout IsVisible="{Binding LoadingNotifications}" 
@@ -50,7 +50,7 @@
                                 <OnPlatform x:TypeArguments="Color" Android="{StaticResource Accent}"/>
                             </ActivityIndicator.Color>
                         </ActivityIndicator>
-                        <Label Text="Loading Announcements..." 
+                        <Label Text="Duyurular yükleniyor..." 
                                HorizontalOptions="Center" 
                                Style="{DynamicResource EvolveListItemTextStyle}"/>
                    </StackLayout>
@@ -83,7 +83,7 @@
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="34"/>
                         </Grid.ColumnDefinitions>
-                        <local:LabelSection Text="Upcoming Favorites"/>
+                        <local:LabelSection Text="Gelecek Beğenilenler"/>
                     </Grid>
                     <local:HeaderDivider/>
                     <StackLayout IsVisible="{Binding LoadingSessions}" 
@@ -106,7 +106,7 @@
                                   BackgroundColor="White"
                                   Padding="{StaticResource StandardPadding}">
                        
-                        <Label Text="No Upcoming Favorites" 
+                        <Label Text="Gelecek beğenilen etkinlik yok." 
                                HorizontalOptions="Center" 
                                Style="{DynamicResource EvolveListItemTextStyle}"/>
                    </StackLayout>
@@ -131,15 +131,14 @@
                 </StackLayout>
             </local:CardView>
 
-             <local:CardView>
-                 <!--Tweets-->
+             <!--<local:CardView>
                  <StackLayout Spacing="0">
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="34"/>
                         </Grid.ColumnDefinitions>
-                        <local:LabelSection Text="Social - #XamarinEvolve"/>
+                        <local:LabelSection Text="Vebiz - #Vizyon2018"/>
                     </Grid>
                     <local:HeaderDivider/>
                     <StackLayout IsVisible="{Binding LoadingSocial}" 
@@ -186,7 +185,7 @@
                     </local:NonScrollableListView>
                     <local:FooterDivider/>
                 </StackLayout>
-            </local:CardView>
+            </local:CardView>-->
         </StackLayout>
     </local:AlwaysScrollView>
     </pull:PullToRefreshLayout>

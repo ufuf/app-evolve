@@ -1,4 +1,4 @@
-// Helpers/Settings.cs
+﻿// Helpers/Settings.cs
 using Plugin.Settings;
 using Plugin.Settings.Abstractions;
 using XamarinEvolve.Clients.Portable;
@@ -245,7 +245,7 @@ namespace XamarinEvolve.Clients.Portable
 
         const string ShowPastSessionsKey = "show_past_sessions";
         static readonly bool ShowPastSessionsDefault = false;
-        public static readonly DateTime EndOfEvolve = new DateTime(2016, 4, 29, 0, 0, 0, DateTimeKind.Utc);
+        public static readonly DateTime EndOfEvolve = new DateTime(2018, 4, 29, 0, 0, 0, DateTimeKind.Utc);
 
         /// <summary>
         /// Gets or sets a value indicating whether the user wants show past sessions.

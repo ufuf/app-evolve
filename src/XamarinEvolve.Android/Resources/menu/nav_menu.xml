@@ -6,52 +6,52 @@
         <item
             android:id="@+id/nav_feed"
             android:icon="@drawable/menu_feed"
-            android:title="Evolve Feed"/>
+            android:title="Vizyon 2018"/>
         <item
             android:id="@+id/nav_sessions"
             android:icon="@drawable/menu_sessions"
-            android:title="Sessions"/>
+            android:title="Oturumlar"/>
         <item
             android:id="@+id/nav_events"
             android:icon="@drawable/menu_events"
-            android:title="Events" />
+            android:title="Etkinlikler" />
 
         <item
-            android:title="Mini-hacks"
+            android:title="Yarışmalar"
             android:icon="@drawable/menu_hacks"
             android:id="@+id/nav_mini_hacks" />
     </group>
 
-     <item android:title="Information" >
+     <item android:title="Bilgi" >
         <menu>
 
             <item
                 android:id="@+id/nav_sponsors"
                 android:icon="@drawable/menu_sponsors"
-                android:title="Sponsors"
+                android:title="Sponsorlar"
                 android:checkable="true" />
             <item
                 android:id="@+id/nav_evals"
                 android:icon="@drawable/menu_evals"
-                android:title="Evaluations"
+                android:title="Değerlendirme"
                 android:checkable="true" />
             <item
                 android:id="@+id/nav_venue"
                 android:icon="@drawable/menu_venue"
-                android:title="Venue"
+                android:title="Etkinlik Alanı"
                 android:checkable="true" />
             <item
                 android:id="@+id/nav_floor_map"
                 android:icon="@drawable/menu_plan"
-                android:title="Floor Maps"
+                android:title="Kat Planı"
                 android:checkable="true" />
             <item
                 android:id="@+id/nav_conference_info"
                 android:icon="@drawable/menu_info"
-                android:title="Conference Info"
+                android:title="Konferans Bilgi"
                 android:checkable="true" />
             <item
-                android:title="Settings"
+                android:title="Ayarlar"
                 android:icon="@drawable/menu_settings"
                 android:id="@+id/nav_settings"
                 android:checkable="true" />

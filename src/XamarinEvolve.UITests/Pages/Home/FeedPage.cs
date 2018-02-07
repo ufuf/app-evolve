@@ -11,7 +11,7 @@ namespace XamarinEvolve.UITests
                 string FavoriteItem = "SessionItem" ; //TODO: Create Favs after creating accounttree
 
                 public FeedPage()
-                    : base (x => x.Class("Toolbar").Descendant().Text("Evolve Feed"), x => x.Class("UINavigationBar").Id("Evolve Feed"))
+                    : base (x => x.Class("Toolbar").Descendant().Text("Vizyon 2018"), x => x.Class("UINavigationBar").Id("Evolve Feed"))
                 {
                         if (OnAndroid)
                             {

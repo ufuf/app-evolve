@@ -19,16 +19,16 @@ namespace XamarinEvolve.Clients.UI
 
             var items = new ObservableCollection<MenuItem>
             {
-                new MenuItem { Name = "Evolve Feed", Icon = "menu_feed.png", Page = AppPage.Feed },
-                new MenuItem { Name = "Sessions", Icon = "menu_sessions.png", Page = AppPage.Sessions },
-                new MenuItem { Name = "Events", Icon = "menu_events.png", Page = AppPage.Events },
-                new MenuItem { Name = "Mini-Hacks", Icon = "menu_hacks.png", Page = AppPage.MiniHacks },
-                new MenuItem { Name = "Sponsors", Icon = "menu_sponsors.png", Page = AppPage.Sponsors },
-                new MenuItem { Name = "Evaluations", Icon = "menu_evals.png", Page = AppPage.Evals },
-                new MenuItem { Name = "Venue", Icon = "menu_venue.png", Page = AppPage.Venue },
-                new MenuItem { Name = "Floor Maps", Icon = "menu_plan.png", Page = AppPage.FloorMap },
-                new MenuItem { Name = "Conference Info", Icon = "menu_info.png", Page = AppPage.ConferenceInfo },
-                new MenuItem { Name = "Settings", Icon = "menu_settings.png", Page = AppPage.Settings }
+                new MenuItem { Name = "Vizyon 2018", Icon = "menu_feed.png", Page = AppPage.Feed },
+                new MenuItem { Name = "Oturumlar", Icon = "menu_sessions.png", Page = AppPage.Sessions },
+                new MenuItem { Name = "Etkinlikler", Icon = "menu_events.png", Page = AppPage.Events },
+                new MenuItem { Name = "Yarışmalar", Icon = "menu_hacks.png", Page = AppPage.MiniHacks },
+                new MenuItem { Name = "Sponsorlar", Icon = "menu_sponsors.png", Page = AppPage.Sponsors },
+                new MenuItem { Name = "Değerlendirme", Icon = "menu_evals.png", Page = AppPage.Evals },
+                new MenuItem { Name = "Etkinlik Alanı", Icon = "menu_venue.png", Page = AppPage.Venue },
+                new MenuItem { Name = "Kat Planı", Icon = "menu_plan.png", Page = AppPage.FloorMap },
+                new MenuItem { Name = "Konferans Bilgisi", Icon = "menu_info.png", Page = AppPage.ConferenceInfo },
+                new MenuItem { Name = "Ayarlar", Icon = "menu_settings.png", Page = AppPage.Settings }
             };
 
             menu = new MenuPageUWP();

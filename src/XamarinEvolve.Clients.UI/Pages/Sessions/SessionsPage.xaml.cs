@@ -39,7 +39,7 @@ namespace XamarinEvolve.Clients.UI
 
             filterItem = new ToolbarItem
             {
-                    Text = "Filter"
+                    Text = "Filtre"
             };
 
             if (Device.OS != TargetPlatform.iOS)
@@ -92,7 +92,7 @@ namespace XamarinEvolve.Clients.UI
 
         void UpdatePage()
         {
-            Title = Settings.Current.FavoritesOnly ? "Favorite Sessions" : "Sessions";
+            Title = Settings.Current.FavoritesOnly ? "Beğenilen Oturumlar" : "Oturumlar";
 
             bool forceRefresh = (DateTime.UtcNow > (ViewModel?.NextForceRefresh ?? DateTime.UtcNow)) ||
                 loggedIn != Settings.Current.Email;

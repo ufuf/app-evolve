@@ -1,11 +1,11 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     xmlns:local="clr-namespace:XamarinEvolve.Clients.UI;assembly=XamarinEvolve.Clients.UI"
     xmlns:toolkit="clr-namespace:FormsToolkit;assembly=FormsToolkit"
              x:Class="XamarinEvolve.Clients.UI.EventDetailsPage"
-    Title="Event Details"
+    Title="Etkinlik Detayları"
     
     BackgroundColor="{DynamicResource WindowBackgroundTable}">
    <ContentPage.Resources>
@@ -67,7 +67,7 @@
                             <ColumnDefinition Width="Auto"/>
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
-                        <Label Text="Location" Style="{DynamicResource EvolveListItemTextStyle}" VerticalTextAlignment="Center"/>
+                        <Label Text="Yer" Style="{DynamicResource EvolveListItemTextStyle}" VerticalTextAlignment="Center"/>
                         <Label Grid.Column="1" HorizontalOptions="End" Text="{Binding Event.LocationName}" Style="{DynamicResource EvolveListItemTextStyle}" TextColor="{DynamicResource DetailTextColor}" VerticalTextAlignment="Center" StyleId="EventLocationRoom"/>
                     </Grid>
                 <local:FooterDivider/>

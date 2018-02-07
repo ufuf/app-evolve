@@ -14,7 +14,7 @@ namespace XamarinEvolve.Clients.UI
             if (value == null)
                 return string.Empty;
             
-            return (bool)value ? "Unfavorite" : "Favorite";
+            return (bool)value ? "Beğenme" : "Beğen";
 
         }
 
@@ -34,7 +34,7 @@ namespace XamarinEvolve.Clients.UI
             if (value == null)
                 return string.Empty;
             
-            return (bool)value ? "Remove from Favorites" : "Add to Favorites";
+            return (bool)value ? "Beğenilenlerden Kaldır" : "Beğenilenlere Ekle";
 
         }
 
@@ -55,7 +55,7 @@ namespace XamarinEvolve.Clients.UI
                 return string.Empty;
             
 
-            return (bool)value ? "Remove from Calendar" : "Add to Calendar";
+            return (bool)value ? "Takvimden Kaldır" : "Takvime Ekle";
             
         }
 
@@ -75,7 +75,7 @@ namespace XamarinEvolve.Clients.UI
             if (value == null)
                 return string.Empty;
             
-            return (bool)value ? "Remove from Calendar" : "Add to Calendar";
+            return (bool)value ? "Takvimden Kaldır" : "Takvime Ekle";
 
         }
 

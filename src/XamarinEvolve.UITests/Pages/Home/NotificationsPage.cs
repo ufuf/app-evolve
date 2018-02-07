@@ -9,7 +9,7 @@ namespace XamarinEvolve.UITests
         string AnnouncementItem = "NotificationItem";
 
         public NotificationsPage()
-            : base (x => x.Id("toolbar").Child(0).Text("Announcements"), x => x.Class("UINavigationBar").Id("Announcements"))
+            : base (x => x.Id("toolbar").Child(0).Text("Duyurular"), x => x.Class("UINavigationBar").Id("Announcements"))
         {
             if (OnAndroid)
             {

@@ -1,13 +1,13 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     xmlns:local="clr-namespace:XamarinEvolve.Clients.UI;assembly=XamarinEvolve.Clients.UI"
     xmlns:toolkit="clr-namespace:FormsToolkit;assembly=FormsToolkit"
     x:Class="XamarinEvolve.Clients.UI.SpeakerDetailsPage"
-    Title="Speaker Info"
+    Title="Konuşmacı Hakkında"
     x:Name="SpeakerInfo"
-    NavigationPage.BackButtonTitle="Back"
+    NavigationPage.BackButtonTitle="Geri"
     BackgroundColor="{DynamicResource WindowBackgroundTable}">
     <ContentPage.Resources>
      <ResourceDictionary>
@@ -67,7 +67,7 @@
                         <!--Biography-->
                         <local:CardView>
                             <StackLayout Spacing="0">
-                                <local:LabelSection Text="Biography"/>
+                                <local:LabelSection Text="Özgeçmiş"/>
                                 <local:HeaderDivider/>
                                 <StackLayout Padding="{StaticResource StandardPadding}" BackgroundColor="White">
                                     <Label Text="{Binding Speaker.Biography}" Style="{DynamicResource EvolveListItemTextStyle}"/>
@@ -79,7 +79,7 @@
                         <local:CardView IsVisible="{Binding FollowItems, Converter={StaticResource GenericIsVisibleConverter}}">
                             <StackLayout Spacing="0">
                                 <!--Follow-->
-                                <local:LabelSection Text="Follow"/>
+                                <local:LabelSection Text="Takip"/>
                                 <local:HeaderDivider/>
                                 <local:NonScrollableListView
                                     ItemsSource="{Binding FollowItems}"
@@ -129,7 +129,7 @@
                         <local:CardView IsVisible="{Binding HasAdditionalSessions}">
                             <!--Sessions-->
                             <StackLayout Spacing="0">
-                                <local:LabelSection Text="More Sessions" StyleId="MoreSessionsSection"/>
+                                <local:LabelSection Text="Başka Oturumları" StyleId="MoreSessionsSection"/>
                                 <local:HeaderDivider/>
                                 <StackLayout IsVisible="{Binding IsBusy}"
                                              HorizontalOptions="FillAndExpand"

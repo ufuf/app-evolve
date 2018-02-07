@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:local="clr-namespace:XamarinEvolve.Clients.UI;assembly=XamarinEvolve.Clients.UI"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="XamarinEvolve.Clients.UI.NotificationsPage"
-    Title="Announcements"
+    Title="Duyurular"
      BackgroundColor="{DynamicResource WindowBackground}">
    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
      <ListView 
@@ -53,7 +53,7 @@
                     <OnPlatform x:TypeArguments="Color" Android="{StaticResource Accent}"/>
                 </ActivityIndicator.Color>
             </ActivityIndicator>
-            <Label Text="Loading Announcements..." HorizontalOptions="Center" Style="{DynamicResource EvolveListItemTextStyle}"/>
+            <Label Text="Duyurular yükleniyor..." HorizontalOptions="Center" Style="{DynamicResource EvolveListItemTextStyle}"/>
        </StackLayout>
     </AbsoluteLayout>
 </ContentPage>

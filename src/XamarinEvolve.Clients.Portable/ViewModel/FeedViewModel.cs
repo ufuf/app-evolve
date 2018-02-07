@@ -96,7 +96,7 @@ namespace XamarinEvolve.Clients.Portable
                 Notification = new Notification
                     {
                         Date = DateTime.UtcNow,
-                        Text = "Welcome to Xamarin Evolve!"
+                        Text = "Vizyon 2018'e Hoş Geldiniz!"
                     };   
             }
             finally

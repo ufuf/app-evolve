@@ -1,11 +1,11 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="XamarinEvolve.Clients.UI.MiniHacksPage"
     xmlns:local="clr-namespace:XamarinEvolve.Clients.UI;assembly=XamarinEvolve.Clients.UI"
-    Title="Mini-Hacks"
-    NavigationPage.BackButtonTitle="Hacks"
+    Title="Yarışmalar"
+    NavigationPage.BackButtonTitle="Yarışmalar"
     Icon="tab_minihacks.png"
     BackgroundColor="{DynamicResource WindowBackground}">
     <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
@@ -43,7 +43,7 @@
                     <OnPlatform x:TypeArguments="Color" Android="{StaticResource Accent}"/>
                 </ActivityIndicator.Color>
             </ActivityIndicator>
-            <Label Text="Loading Mini-Hacks..." HorizontalOptions="Center" Style="{DynamicResource EvolveListItemTextStyle}"/>
+            <Label Text="Yarışmalar Yükleniyor..." HorizontalOptions="Center" Style="{DynamicResource EvolveListItemTextStyle}"/>
        </StackLayout>
        <StackLayout IsVisible="{Binding NoHacksFound}"
                                    HorizontalOptions="FillAndExpand"
@@ -52,7 +52,7 @@
                                    AbsoluteLayout.LayoutBounds="0,0,1,1"
                     BackgroundColor="{DynamicResource WindowBackground}"
                     Padding="16,0">
-            <Label Text="Mini-Hacks will be revealed at Evolve. Check back soon." HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand" FontSize="22" TextColor="#D3D2D2">
+            <Label Text="Yarışmalar Vizyon 2018 sırasında yayınlanacaktır." HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand" FontSize="22" TextColor="#D3D2D2">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding ForceRefreshCommand}"/> 
                 </Label.GestureRecognizers>

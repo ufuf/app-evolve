@@ -111,9 +111,9 @@ namespace XamarinEvolve.Clients.Portable
             MessagingService.Current.SendMessage<MessagingServiceAlert>(MessageKeys.Message,
                 new MessagingServiceAlert
                 {
-                    Title="Wi-Fi Configuration",
-                    Message ="Unable to configure WiFi, you may have to configure manually or try again.",
-                    Cancel = "OK"
+                    Title="Wi-Fi Ayarları",
+                    Message ="WiFi kurulumu gerçekleştirilemedi, elle deneyebilir ve ya daha daha sonra tekrar gelebilirsiniz.",
+                    Cancel = "Tamam"
                 });
         }
 

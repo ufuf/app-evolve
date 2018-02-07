@@ -1,11 +1,11 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="XamarinEvolve.Clients.UI.MiniHacksDetailsPage"
     xmlns:local="clr-namespace:XamarinEvolve.Clients.UI;assembly=XamarinEvolve.Clients.UI"
-    Title="Mini-Hack Details"
-    NavigationPage.BackButtonTitle="Hacks"
+    Title="Yarışma Detayları"
+    NavigationPage.BackButtonTitle="Yarışmalar"
     BackgroundColor="{DynamicResource WindowBackgroundTable}">
     <local:AlwaysScrollView>
         <StackLayout Spacing="0">
@@ -34,7 +34,7 @@
                             <StackLayout Spacing="0">
                               <Label Text="{Binding Hack.Name}" Style="{DynamicResource EvolveListItemTextStyle}" StyleId="HackName"/>
                               <Label Text="{Binding Hack.Subtitle}" Style="{DynamicResource EvolveListItemDetailTextStyle}" StyleId="HackSubtitle"/>
-                               <Label Text="Hack Completed!" IsVisible="{Binding Hack.IsCompleted}"  TextColor="{StaticResource Primary}"/>
+                               <Label Text="Yarışma Tamamlandı!" IsVisible="{Binding Hack.IsCompleted}"  TextColor="{StaticResource Primary}"/>
                              </StackLayout>
                             <StackLayout Padding="0,16">
                                 <Label Text="{Binding Hack.Description}"  Style="{DynamicResource EvolveListItemTextStyle}" StyleId="HackDescription"/>
@@ -47,7 +47,7 @@
                                <Grid.IsVisible>
                                 <OnPlatform x:TypeArguments="x:Boolean" iOS="false" Android="true" WinPhone="true"/>
                                </Grid.IsVisible>
-                            <Button Text="Mini-Hack Directions"
+                            <Button Text="Yarışma Yönlendirmeleri"
                                     StyleId="MiniHackDirections"
 									x:Name="MiniHackDirections1"
                                     BackgroundColor="{StaticResource PrimaryDark}"
@@ -60,7 +60,7 @@
                             <StackLayout.IsVisible>
                                 <OnPlatform x:TypeArguments="x:Boolean" iOS="true" Android="false" WinPhone="false"/>
                             </StackLayout.IsVisible>
-                            <Button Text="Mini-Hack Directions"
+                            <Button Text="Yarışma Yönlendirmeleri"
                                     x:Name="MiniHackDirections2"
                             FontAttributes="Bold"
                             HorizontalOptions="StartAndExpand"
@@ -72,9 +72,9 @@
                    
                     <local:SectionDivider/>
                     <StackLayout Padding="{StaticResource StandardPadding}" Spacing="{StaticResource StandardSpacing}" BackgroundColor="White">
-                       <Label Text="When you are finished with the Mini-Hack please see a Xamarin employee to scan the unlock code." Style="{DynamicResource EvolveListItemDetailTextStyle}"/>
+                       <Label Text="Yarışmayı tamamladığınızda standımıza uğrayarak barcode okutabilirsiniz." Style="{DynamicResource EvolveListItemDetailTextStyle}"/>
                           <Button
-                             Text="Finish Mini-Hack"                                     
+                             Text="Yarışmayı Tamamla"                                     
                             x:Name="ButtonFinish"
                             StyleId="FinishButton">
 

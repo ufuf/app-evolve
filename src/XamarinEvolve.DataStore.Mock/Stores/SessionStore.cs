@@ -94,7 +94,7 @@ namespace XamarinEvolve.DataStore.Mock
             int speakerCount = 0;
             int room = 0;
             int category = 0;
-            var day = new DateTime(2016, 4, 27, 13, 0, 0, DateTimeKind.Utc);
+            var day = new DateTime(2018, 4, 27, 13, 0, 0, DateTimeKind.Utc);
             int dayCount = 0;
             for (int i = 0; i < titles.Length; i++)
             {
@@ -142,7 +142,7 @@ namespace XamarinEvolve.DataStore.Mock
                 if (i == titles.Length / 2)
                 {
                     dayCount = 0;
-                    day = new DateTime(2016, 4, 28, 13, 0, 0, DateTimeKind.Utc);
+                    day = new DateTime(2018, 4, 28, 13, 0, 0, DateTimeKind.Utc);
                 }
                 else
                 {

@@ -28,12 +28,12 @@ namespace XamarinEvolve.Clients.Portable
 
             InfoItems.AddRange(new []
                 {
-                    new MenuItem { Name = "Sponsors", Icon = "icon_venue.png", Parameter="sponsors"},
+                    new MenuItem { Name = "Sponsorlar", Icon = "icon_venue.png", Parameter="sponsors"},
                     //new MenuItem { Name = "Evaluations", Icon = "icon_venue.png", Parameter="evaluations"},
-                    new MenuItem { Name = "Venue", Icon = "icon_venue.png", Parameter = "venue"},
-                    new MenuItem { Name = "Conference Floor Maps", Icon = "icon_venue.png", Parameter = "floor-maps"},
+                    new MenuItem { Name = "Etkinlik Alanı", Icon = "icon_venue.png", Parameter = "venue"},
+                    new MenuItem { Name = "Kat Planı", Icon = "icon_venue.png", Parameter = "floor-maps"},
                     new MenuItem { Name = "Code of Conduct", Icon = "icon_code_of_conduct.png", Parameter="code-of-conduct" },
-                    new MenuItem { Name = "Wi-Fi Information", Icon = "icon_wifi.png", Parameter="wi-fi" },
+                    new MenuItem { Name = "Wi-Fi Bilgisi", Icon = "icon_wifi.png", Parameter="wi-fi" },
 
                 });
 
@@ -49,7 +49,7 @@ namespace XamarinEvolve.Clients.Portable
 
             pushItem = new MenuItem
             {
-                Name="Enable push notifications"    
+                Name="Bildirimleri Etkinleştir"    
             };
 
             pushItem.Command = new Command(() =>
@@ -64,7 +64,7 @@ namespace XamarinEvolve.Clients.Portable
                     {
                         MessagingService.Current.SendMessage<MessagingServiceQuestion>(MessageKeys.Question, new MessagingServiceQuestion
                             {
-                                Title = "Push Notification",
+                                Title = "Bildirimler",
                                 Question = "To enable push notifications, please go into Settings, Tap Notifications, and set Allow Notifications to on.",
                                 Positive = "Settings",
                                 Negative = "Maybe Later",

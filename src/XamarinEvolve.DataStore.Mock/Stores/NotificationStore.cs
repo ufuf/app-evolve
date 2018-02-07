@@ -26,7 +26,7 @@ namespace XamarinEvolve.DataStore.Mock
                 new Notification
                 {
                     Date = DateTime.UtcNow,
-                    Text = "Welcome to Xamarin Evolve!"
+                    Text = "Vizyon 2018'e Hoş Geldiniz!"
                 }
             };
             return Task.FromResult(items as IEnumerable<Notification>);

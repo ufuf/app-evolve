@@ -6,9 +6,9 @@
              xmlns:local="clr-namespace:XamarinEvolve.Clients.UI;assembly=XamarinEvolve.Clients.UI"
              x:Class="XamarinEvolve.Clients.UI.AboutPage"
              x:Name="AboutPage"
-             Title="Info"
+             Title="Bilgi"
              Icon="tab_about.png"
-             NavigationPage.BackButtonTitle="Info"
+             NavigationPage.BackButtonTitle="Bilgi"
              BackgroundColor="{DynamicResource WindowBackgroundTable}">
     <!--ContentPage.ToolbarItems>
         <ToolbarItem Command="{Binding LoginCommand}" Text="{Binding LoginText}"/>
@@ -25,7 +25,7 @@
              
                <local:CardView>
                      <StackLayout Spacing="0">
-                        <local:LabelSection Text="My Account"/>
+                        <local:LabelSection Text="Bilgilerim"/>
                         <local:HeaderDivider/>
                         <local:NonScrollableListView 
                             x:Name="ListViewAccount"
@@ -107,7 +107,7 @@
 
                 <local:CardView>
                      <StackLayout Spacing="0">
-                        <local:LabelSection Text="Conference Info"/>
+                        <local:LabelSection Text="Vizyon 2018 Bilgi"/>
                         <local:HeaderDivider/>
                         <local:NonScrollableListView 
                             x:Name="ListViewInfo"

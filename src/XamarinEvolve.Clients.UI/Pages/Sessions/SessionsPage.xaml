@@ -1,11 +1,11 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:XamarinEvolve.Clients.UI;assembly=XamarinEvolve.Clients.UI"
     x:Class="XamarinEvolve.Clients.UI.SessionsPage"
     x:Name="SessionsPage"
-    Title="Sessions"
+    Title="Oturumlar"
     Icon="tab_sessions.png"
     BackgroundColor="{DynamicResource WindowBackground}">
     <ContentPage.Resources>
@@ -27,7 +27,7 @@
                 <OnPlatform x:TypeArguments="Color" Android="{StaticResource Primary}"/>
             </StackLayout.BackgroundColor>
              <SearchBar Text="{Binding Filter, Mode=TwoWay}" 
-                        Placeholder="Search"
+                        Placeholder="Arama"
                         SearchCommand="{Binding FilterSessionsCommand}"
                         FontSize="Small" >
                         <SearchBar.PlaceholderColor>

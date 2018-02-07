@@ -69,7 +69,7 @@ namespace XamarinEvolve.Clients.UI
             if (e.ScrollY > SessionDate.Y)
                 Title = ViewModel.Session.ShortTitle;
             else
-                Title = "Session Details";
+                Title = "Oturum Detayları";
         }
 
         protected override void OnAppearing()

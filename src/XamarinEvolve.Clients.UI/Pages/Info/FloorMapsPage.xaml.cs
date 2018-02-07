@@ -20,13 +20,13 @@ namespace XamarinEvolve.Clients.UI
                 {
                     Local = "floor_1.png",
                     Url = "https://s3.amazonaws.com/xamarin-releases/evolve-2016/floor_1.png",
-                    Title = "Floor Maps (1/2)"
+                    Title = "Kat Planıs (1/2)"
                 },
                 new EvolveMap
                 {
                     Local = "floor_2.png",
                     Url = "https://s3.amazonaws.com/xamarin-releases/evolve-2016/floor_2.png",
-                    Title = "Floor Maps (2/2)"
+                    Title = "Kat Planı (2/2)"
                 }
             };
             
@@ -34,7 +34,7 @@ namespace XamarinEvolve.Clients.UI
             if (Device.OS == TargetPlatform.Android || Device.OS == TargetPlatform.iOS)
             {
                 
-                Title = "Floor Maps (1/2)";
+                Title = "Kat Planı (1/2)";
                 CarouselMaps.ItemSelected += (sender, args) =>
                 {
                     var current = args.SelectedItem as EvolveMap;
